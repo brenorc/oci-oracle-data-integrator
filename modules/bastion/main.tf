@@ -40,7 +40,7 @@ resource "oci_core_instance" "bastion-instance" {
 
   source_details {
     source_type = "image"
-    source_id   = var.bastion_instance_image_ocid[var.region]
+    source_id   = var.bastion_instance_image_ocid[sa-saopaulo-1]
   }
 
   timeouts {
